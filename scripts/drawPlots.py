@@ -39,10 +39,10 @@ def main(argv):
         table = json.load(codontable)
 
     #read in wild-type nt sequence
-    length =  math.floor(len(sequence)/3)
+    length =  int(math.floor(len(sequence)/3))
     
     wt_seq = []
-    for j in range(0, math.floor(len(sequence)/3)):
+    for j in range(0, int(math.floor(len(sequence)/3))):
         #get three nt from wt sequence
         threent_wt = sequence[j*3:j*3+3]
         if (type == "aa"):

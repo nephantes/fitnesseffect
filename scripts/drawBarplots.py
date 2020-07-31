@@ -39,7 +39,7 @@ def main(argv):
         table = json.load(codontable)
 
     #read in wild-type nt sequence
-    length =  math.floor(len(sequence)/3)
+    length =  int(math.floor(len(sequence)/3))
     
     wt_seq = []
     for j in range(0, math.floor(len(sequence)/3)):

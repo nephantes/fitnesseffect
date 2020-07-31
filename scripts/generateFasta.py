@@ -62,7 +62,7 @@ def main(argv):
         elif (counttype == "nt"):
             for j in range(0, len(sequence)):
                 #get three nt from wt sequence
-                index = math.floor(j/3)
+                index = int(math.floor(j/3))
                 threent_wt = sequence[index*3:index*3+3]
                 amino_wt = table[threent_wt]
                 #write whole WT sequence once
