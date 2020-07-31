@@ -2,7 +2,8 @@
 #bash ~/miniconda.sh -b -p $HOME/miniconda
 #export PATH="$HOME/miniconda/bin:$PATH"
 #install bowtie 
-#conda install -c bioconda bowtie python.app
+#conda install -c bioconda bowtie 
+#conda install python.app
 
 seq=TTTAATCAACCCTCAGGAGGGGACCCAGAA
 #create db_aa.fa and db_nt.fa files for given nt sequence

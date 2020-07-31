@@ -30,7 +30,7 @@ def main(argv):
         seqid = 1
         # countype = "aa" allows quantifying only aminoacid level changes. It can be multiple point mutations in a codon.
         if (counttype == "aa"):
-            for j in range(0, math.floor(len(sequence)/3)):
+            for j in range(0, int(math.floor(len(sequence)/3))):
                 #get three nt from wt sequence
                 threent_wt = sequence[j*3:j*3+3]
                 amino_wt = table[threent_wt]
